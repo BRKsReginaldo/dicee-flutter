@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'dice.dart';
+
 void main() {
   return runApp(
     MaterialApp(
@@ -18,6 +20,13 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Row(
+        children: <Widget>[
+          Dice(),
+          Dice(),
+        ],
+      ),
+    );
   }
 }
